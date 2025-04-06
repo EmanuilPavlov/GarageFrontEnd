@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <nav
+      class="absolute top-0 left-0 right-0 z-50 px-4 py-4 flex justify-between items-center bg-transparent border-b-2 border-white"
+    >
+      <a class="text-3xl font-bold leading-none" href="#">
+        <img
+          class="cmp-globalnavigation__logo-image cmp-globalnavigation__logo-image--white"
+          src="https://www.bmw.bg/content/dam/bmw/common/images/logo-icons/BMW/BMW_White_Logo.svg.asset.1670245093434.svg"
+          loading="lazy"
+          alt="BMW Logo"
+          title="BMW Logo"
+        />
+      </a>
+
+      <!-- Mobile Menu Button (Hidden on Larger Screens) -->
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-white p-3">
+          <svg
+            class="block h-4 w-4 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Desktop Menu (Hidden on Mobile, Visible on Larger Screens) -->
+      <ul
+        class="hidden lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6 uppercase font-serif"
+      >
+        <li>
+          <a href="#">
+            <div
+              class="relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-400 before:absolute before:bg-white/80 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-400 after:absolute after:bg-white/80 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <span>Home</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <div
+              class="relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-400 before:absolute before:bg-white/80 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-400 after:absolute after:bg-white/80 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <span>About Us</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <div
+              class="relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-400 before:absolute before:bg-white/80 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-400 after:absolute after:bg-white/80 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <span>Service</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <div
+              class="relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-400 before:absolute before:bg-white/80 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-400 after:absolute after:bg-white/80 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <span>Pricing</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <div
+              class="relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-400 before:absolute before:bg-white/80 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-400 after:absolute after:bg-white/80 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <span>Contact Us</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Menu (Hidden by Default, Visible on Mobile Screens) -->
+    <div class="navbar-menu hidden relative z-50">
+      <div class="navbar-backdrop fixed inset-0 opacity-25"></div>
+      <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-full py-4 px-4 bg-white border-r overflow-y-auto"
+      >
+        <div class="flex items-center mb-8">
+          <a class="mr-auto text-3xl font-bold leading-none" href="#">
+            <img
+              class="cmp-globalnavigation__logo-image cmp-globalnavigation__logo-image--white"
+              src="https://www.bmw.bg/content/dam/bmw/common/images/logo-icons/BMW/BMW_White_Logo.svg.asset.1670245093434.svg"
+              loading="lazy"
+              alt="BMW Logo"
+              title="BMW Logo"
+            />
+          </a>
+          <button class="navbar-close">
+            <svg
+              class="h-6 w-6 text-black cursor-pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul>
+          <li class="mb-1">
+            <a
+              class="block p-4 text-sm font-semibold text-black hover:text-blue-600 rounded"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li class="mb-1">
+            <a
+              class="block p-4 text-sm font-semibold text-black hover:text-blue-600 rounded"
+              href="#"
+              >About Us</a
+            >
+          </li>
+          <li class="mb-1">
+            <a
+              class="block p-4 text-sm font-semibold text-black hover:text-blue-600 rounded"
+              href="#"
+              >Services</a
+            >
+          </li>
+          <li class="mb-1">
+            <a
+              class="block p-4 text-sm font-semibold text-black hover:text-blue-600 rounded"
+              href="#"
+              >Pricing</a
+            >
+          </li>
+          <li class="mb-1">
+            <a
+              class="block p-4 text-sm font-semibold text-black hover:text-blue-600 rounded active:text-blue-500"
+              href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- First Section (Video Background) -->
+    <div class="relative w-full h-screen overflow-hidden">
+      <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-10">
+        <source
+          src="/src/videos/The Thunder - BMW G80 M3 Competition - R.T.P (online-video-cutter.com).mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const burger = document.querySelector(".navbar-burger");
+      const menu = document.querySelector(".navbar-menu");
+      const close = document.querySelector(".navbar-close");
+      const backdrop = document.querySelector(".navbar-backdrop");
+
+      // Toggle the menu visibility
+      burger.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+      });
+
+      // Close the menu when close button or backdrop is clicked
+      close.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+      });
+
+      backdrop.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+      });
+    });
+  </script>
+</html>
