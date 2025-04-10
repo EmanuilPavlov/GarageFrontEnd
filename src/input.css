@@ -1,1 +1,34 @@
 @import "tailwindcss";
+
+/* styles.css */
+
+/* Define custom colors */
+:root {
+    --custom-dark_gunMetal: #1b242b;
+    --custom-chrome_yellow: #f7a801;
+    --custom-auroMetalSaurus: #757981;
+
+  }
+  
+  /* Background */
+  .dark_gunMetal-bg {
+    background-color: var(--custom-dark_gunMetal);
+  }
+  .chrome_yellow-bg {
+    background-color: var(--custom-chrome_yellow);
+  }
+  .auroMetalSaurus-bg {
+    background-color: var(--custom-auroMetalSaurus);
+  }
+
+  /* Text Color */
+  
+  .dark_gunMetal-text {
+    color: var(--custom-dark_gunMetal);
+  }
+  .chrome_yellow-text {
+    color: var(--custom-chrome_yellow);
+  }
+  .auroMetalSaurus-text {
+    color: var(--custom-auroMetalSaurus);
+  }
